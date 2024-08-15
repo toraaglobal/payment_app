@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-dvv4%r09%tgoz==uk9iqnus_!idi=waf@(ua*cmf$w$9nz+%_a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["paymentapp-toraaglobal.up.railway.app", "localhost"]
 
 
 # Application definition
