@@ -66,3 +66,4 @@ watchdog==4.0.2
 wcmatch==9.0
 werkzeug==3.0.3
 zipp==3.19.2
+gunicorn-23.0.0
