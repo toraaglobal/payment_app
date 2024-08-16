@@ -365,9 +365,9 @@ SPECTACULAR_SETTINGS = {
 
 ################################## AWS S3 settings ##################################
 
-# AWS_ACCESS_KEY_ID = "AKIAZK5IZZVYNHEWXOMW"
+# AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 
-# AWS_SECRET_ACCESS_KEY = "mkYsYqwbchjDMPRyaaQLzh8zCB+p8hi4d/PqgN3v"
+# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY
 
 # AWS_STORAGE_BUCKET_NAME = "payment-desphixs"
 
