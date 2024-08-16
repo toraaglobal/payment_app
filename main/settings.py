@@ -63,6 +63,9 @@ INSTALLED_APPS = [
     # api docs https://github.com/tfranzel/drf-spectacular/
     'drf_spectacular',
     'drf_spectacular_sidecar',  # required for Django collectstatic discovery
+
+    # stroe files
+    # 'storages',
   
    
 ]
@@ -356,3 +359,32 @@ SPECTACULAR_SETTINGS = {
     
     # OTHER SETTINGS
 }
+
+
+
+
+################################## AWS S3 settings ##################################
+
+# AWS_ACCESS_KEY_ID = "AKIAZK5IZZVYNHEWXOMW"
+
+# AWS_SECRET_ACCESS_KEY = "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"
+
+# AWS_STORAGE_BUCKET_NAME = "payment-desphixs"
+
+# AWS_S3_FILE_OVERWRITE = False
+
+# AWS_DEFAULT_ACL = None
+
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
+
+# AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+# AWS_LOCATION = 'static'
+
+# STATIC_LOCATION = 'static'
+
+# STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
