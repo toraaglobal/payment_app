@@ -62,7 +62,7 @@ class Account(models.Model):
         return f"{self.user}"
     
 class KYC(models.Model):
-    id = models.AutoField(primary_key=True,unique=True,editable=False)
+    id = models.UUIDField(primary_key=True, unique=True, default=uuid.uuid4, editable=False)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     account= models.ForeignKey(Account, on_delete=models.CASCADE, blank=True, null=True)
     full_name = models.CharField(max_length = 255)
