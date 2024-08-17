@@ -13,10 +13,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os 
 import dj_database_url
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # load environment variables
-load_dotenv()
+# load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "os.environ.get('SECRET_KEY')"
+SECRET_KEY = "django-insecure-dvv4%r09%tgoz==uk9iqnus_!idi=waf@(ua*cmf$w$9nz+%_a" # os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG")
+DEBUG = False #os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = ["paymentapp-toraaglobal.up.railway.app", "localhost", '127.0.0.1']
 
